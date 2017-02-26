@@ -1,0 +1,57 @@
+#
+# Simple script to generate passwords in Python
+#
+
+import random
+import string
+
+numLoop = 0
+
+input = raw_input("How many characters should the password be? ")
+    if input in string.digits:
+        print (7)
+    else:
+        print ("This is not an number.")
+
+    
+    
+
+length = input("How long a password do you want? (Integer)")
+print ("You wanted %s characters" % (length))    
+
+# character types to include in the password
+# characters are not included unless user says so
+charTypes = {
+    'lowercase': [False, string.ascii_lowercase],
+    'uppercase': [False, string.ascii_uppercase],
+    'number': [False, string.digits],
+    'special': [False, string.punctuation], 
+}
+
+# string that will contain the characters to pick from
+pool = ""
+
+# asks user what charsters they would like to include
+for char_type in charTypes:
+    use = input("Use %s (Y/N) " % (char_type))
+    #print ("Use %s: %s" % (char_type, use.upper()))
+    
+    if (use.upper() == "Y"):
+        pool += charTypes[char_type][1]
+        
+        
+print (pool)
+        
+"""useTypes = charTypes
+
+for char_type in charTypes:
+    if charTypes
+        
+for i in range(int(length)):
+    i += 1    
+    password = []
+    
+    password.append(random.choice)
+    print (password)"""
+        
+        
