@@ -1,0 +1,14 @@
+# Python package requirements
+# packages can be installed with pacman/yay
+
+# pacman -S <package.name>
+python-flask
+python-flask_wtf
+python-wtforms
+python-flask-mail
+python-flask-mail
+python-pyjwt
+python-flask-bootstrap
+
+#yay - S <package.name>
+python-dotenv

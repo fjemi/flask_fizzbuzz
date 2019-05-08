@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% import 'bootstrap/wtf.html' as wtf %}
+
+{% block app_content %}
+
+<p>
+	Fizz Buzz is a program that prints the numbers 1 to 100, but prints <i>Fizz</i>, <i>Buzz</i>, or <i>FizzBuzz</i> for numbers that are multiples of 3, 5, or both; respectively.
+</p>
+<p>
+	You can find an example of the program in action <a herf="{{ url_for('main.result') }}">Here</a>, or enter two numbers below to see the Fizz Buzz result.
+</p><br>
+
+
+{{ wtf.quick_form(form) }}
+ 
+
+{% endblock %} 
